@@ -20,3 +20,11 @@ angle = 9.4
 shape = "italic"
 menu = "italic"
 css = "italic"
+
+[buildPlans.iosevka-custom.widths.normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[collectPlans.giorgio-mono]
+from = ["giorgio-mono"]
