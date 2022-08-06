@@ -1,7 +1,7 @@
 version := "15.6.3"
 
 default:
-  just build version 
+  just build version
 
 ttf fontver=version:
   docker run -e FONT_VERSION={{fontver}} --rm -it -v $(pwd):/build $(docker build -t giorgio-mono-builder -q .) ttf::giorgio-mono --jCmd=8
