@@ -9,6 +9,11 @@ no-ligation = true
 brace = "curly-flat-boundary"
 asterisk = "hex-low"
 
+#  Keep the 2 spaces indentation?
+#  [buildPlans.giorgio-mono.ligations]
+#  inherits = "dlig"
+#  disables = [ "connected-underscore" ]
+
 [buildPlans.giorgio-mono.slopes.upright]
 angle = 0
 shape = "upright"
