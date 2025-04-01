@@ -1,7 +1,10 @@
-version := "15.6.3"
+version := "16.1.0"
 
 default:
   just build version
+
+build fontver=version:
+  docker run -e FONT_VERSION={{fontver}} --rm -it -v $(pwd):/build avivace/iosevka-build
 
 ttf fontver=version:
   docker run -e FONT_VERSION={{fontver}} --rm -it -v $(pwd):/build $(docker build -t giorgio-mono-builder -q .) ttf::giorgio-mono --jCmd=8
