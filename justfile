@@ -1,4 +1,4 @@
-version := "33.2.0"
+version := "34.0.0"
 
 default:
   just build version
